@@ -41,7 +41,7 @@ class Tablet extends StatelessWidget {
                     ),
                   ],
                 ),
-                const SizedBox(width: 50),
+                const SizedBox(width: 35),
                 Column(
                   children: [
                     SizedBox(
@@ -72,7 +72,7 @@ class Tablet extends StatelessWidget {
                 )
               ],
             ),
-            const SizedBox(height: 50),
+            const SizedBox(height: 45),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -95,7 +95,7 @@ class Tablet extends StatelessWidget {
                     ),
                   ],
                 ),
-                const SizedBox(width: 50),
+                const SizedBox(width: 35),
                 Column(
                   children: [
                     SizedBox(
@@ -116,7 +116,7 @@ class Tablet extends StatelessWidget {
                 )
               ],
             ),
-            const SizedBox(height: 50),
+            const SizedBox(height: 45),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -139,7 +139,7 @@ class Tablet extends StatelessWidget {
                     ),
                   ],
                 ),
-                const SizedBox(width: 50),
+                const SizedBox(width: 35),
                 Column(
                   children: [
                     SizedBox(

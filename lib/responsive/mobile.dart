@@ -37,9 +37,7 @@ class Mobile extends StatelessWidget {
           fixedSpace,
           Rectangle(
             children: [
-              const FlutterLogo(
-                size: 100,
-              ),
+              
               Column(
                 children: invetory.map((e) => e).toList(),
               )
