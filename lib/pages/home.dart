@@ -15,10 +15,15 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      body: Responsive(
-        mobile: Mobile(),
-        tablet: Tablet(),
-      ),
+      body: DefaultTextStyle(
+          style: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontFamily: "SF Pro Display",
+              color: Colors.black),
+          child: Responsive(
+            mobile: Mobile(),
+            tablet: Tablet(),
+          )),
     );
   }
 }

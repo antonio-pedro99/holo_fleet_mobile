@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:holo_fleet_mobile/constants.dart';
 import 'package:holo_fleet_mobile/pages/home.dart';
+import 'package:holo_fleet_mobile/pages/login.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: white24,
         primarySwatch: getItsMaterialColor(mySwatch),
       ),
-      home: const MyHomePage(),
+      home: const LoginPage(),
     );
   }
 }

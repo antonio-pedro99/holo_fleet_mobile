@@ -10,7 +10,7 @@ class RectangleChild extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 50,
+      height: 40,
       child: Column(
         children: [
           Row(
