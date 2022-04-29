@@ -1,0 +1,22 @@
+<svg id="Group_18835" data-name="Group 18835" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+  <g id="Ellipse_23" data-name="Ellipse 23" transform="translate(1 1)" fill="#fff" stroke="#000" stroke-width="0.75">
+    <circle cx="6.5" cy="6.5" r="6.5" stroke="none"/>
+    <circle cx="6.5" cy="6.5" r="6.125" fill="none"/>
+  </g>
+  <g id="Ellipse_24" data-name="Ellipse 24" transform="translate(6)" fill="#fff" stroke="#000" stroke-width="0.75">
+    <circle cx="1.5" cy="1.5" r="1.5" stroke="none"/>
+    <circle cx="1.5" cy="1.5" r="1.125" fill="none"/>
+  </g>
+  <g id="Ellipse_25" data-name="Ellipse 25" transform="translate(6 12)" fill="#fff" stroke="#000" stroke-width="0.75">
+    <circle cx="1.5" cy="1.5" r="1.5" stroke="none"/>
+    <circle cx="1.5" cy="1.5" r="1.125" fill="none"/>
+  </g>
+  <g id="Ellipse_26" data-name="Ellipse 26" transform="translate(0 6)" fill="#fff" stroke="#000" stroke-width="0.75">
+    <circle cx="1.5" cy="1.5" r="1.5" stroke="none"/>
+    <circle cx="1.5" cy="1.5" r="1.125" fill="none"/>
+  </g>
+  <g id="Ellipse_27" data-name="Ellipse 27" transform="translate(12 6)" fill="#fff" stroke="#000" stroke-width="0.75">
+    <circle cx="1.5" cy="1.5" r="1.5" stroke="none"/>
+    <circle cx="1.5" cy="1.5" r="1.125" fill="none"/>
+  </g>
+</svg>
