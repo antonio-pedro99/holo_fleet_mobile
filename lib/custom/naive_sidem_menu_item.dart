@@ -7,7 +7,7 @@ class NaiveSideMenuItem extends StatelessWidget {
       required this.title,
       required this.icon,
       this.listen = false,
-      this.labelcolor = grey16,
+      this.labelcolor = Colors.grey,
       this.backgroundColor = Colors.transparent,
       this.onPress})
       : super(key: key);

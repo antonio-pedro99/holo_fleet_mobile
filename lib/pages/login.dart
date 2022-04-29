@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:holo_fleet_mobile/app.dart';
 import 'package:holo_fleet_mobile/constants.dart';
+import 'package:holo_fleet_mobile/custom/custom_buttom.dart';
 import 'package:holo_fleet_mobile/pages/register.dart';
 import 'package:holo_fleet_mobile/responsive.dart';
 
@@ -75,22 +76,15 @@ buildForm(BuildContext context) {
                       fontSize: 14)),
             ),
             const SizedBox(height: 35),
-            TextButton(
-                style: ButtonStyle(
-                    maximumSize: MaterialStateProperty.resolveWith(
-                        (states) => const Size(300, 50)),
-                    backgroundColor: MaterialStateProperty.resolveWith(
-                        (states) => Colors.black)),
-                onPressed: () {
-                  Navigator.of(context).pushAndRemoveUntil(
-                      MaterialPageRoute(builder: (context) {
-                    return const MyApp();
-                  }), (route) => false);
-                },
-                child: const Text(
-                  "Log In",
-                  style: TextStyle(color: Colors.white, fontSize: 14),
-                )),
+            CustomButtomText(
+              label: "Log in",
+              onPress: () {
+                Navigator.of(context).pushAndRemoveUntil(
+                    MaterialPageRoute(builder: (context) {
+                  return const MyApp();
+                }), (route) => false);
+              },
+            ),
             const SizedBox(height: 10),
             const Text("Can't remember your password? Recover it",
                 style: TextStyle(

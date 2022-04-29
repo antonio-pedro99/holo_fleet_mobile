@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:holo_fleet_mobile/constants.dart';
+import 'package:holo_fleet_mobile/custom/custom_buttom.dart';
 import 'package:holo_fleet_mobile/custom/rectangle.dart';
 import 'package:holo_fleet_mobile/pages/login.dart';
 import 'package:holo_fleet_mobile/responsive.dart';
@@ -12,8 +13,8 @@ class RegisterPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Responsive(mobile: registerMobile(context), tablet: registerTablet(context))
-    );
+        body: Responsive(
+            mobile: registerMobile(context), tablet: registerTablet(context)));
   }
 }
 
@@ -101,17 +102,15 @@ buildForm(BuildContext context) {
                       fontSize: 14)),
             ),
             const SizedBox(height: 35),
-            TextButton(
-                style: ButtonStyle(
-                    maximumSize: MaterialStateProperty.resolveWith(
-                        (states) => const Size(300, 50)),
-                    backgroundColor: MaterialStateProperty.resolveWith(
-                        (states) => Colors.black)),
-                onPressed: () {},
-                child: const Text(
-                  "Sign Up",
-                  style: TextStyle(color: Colors.white, fontSize: 14),
-                )),
+            CustomButtomText(
+              label: "Log in",
+              onPress: () {
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (context) {
+                  return const LoginPage();
+                }));
+              },
+            ),
             const SizedBox(height: 50),
             const Divider(
               color: grey22,
