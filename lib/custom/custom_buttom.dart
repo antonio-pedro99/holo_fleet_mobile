@@ -13,6 +13,7 @@ class CustomButtomText extends StatelessWidget {
         padding: const EdgeInsets.all(8),
         height: 50,
         width: 300,
+        alignment: Alignment.center,
         decoration: BoxDecoration(
             color: Colors.black, borderRadius: BorderRadius.circular(3)),
         child: Text(
