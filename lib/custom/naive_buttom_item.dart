@@ -31,7 +31,7 @@ class NaiveNavigationBarItem extends StatelessWidget {
           listen ?? true
               ? const Positioned(
                   right: 12,
-                  top: 14,
+                  top: 12,
                   child: Icon(
                     Icons.circle,
                     size: 10,

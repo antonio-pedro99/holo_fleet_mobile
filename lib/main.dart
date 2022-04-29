@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: white24,
         primarySwatch: getItsMaterialColor(mySwatch),
       ),
-      home: const LoginPage(),
+      home: const MyApp(),
     );
   }
 }

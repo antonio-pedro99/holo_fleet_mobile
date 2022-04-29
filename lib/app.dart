@@ -18,7 +18,7 @@ int currentPage = 0;
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return Responsive(mobile: homeMobile(context), tablet: homeTable(context));
+    return Responsive(mobile: homeMobile(context), tablet: homeTablet(context));
   }
 }
 
@@ -77,13 +77,10 @@ Widget homeMobile(
   );
 }
 
-Widget homeTable(BuildContext context) {
+Widget homeTablet(BuildContext context) {
   return Scaffold(
     body: Row(
-      children: [
-        myNaiveNavigationBar(context),
-        Expanded(child: pages[currentPage])
-      ],
+      children: [myNaiveSideBar(context), Expanded(child: pages[currentPage])],
     ),
   );
 }

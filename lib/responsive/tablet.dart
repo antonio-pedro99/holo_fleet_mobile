@@ -3,6 +3,7 @@ import 'package:holo_fleet_mobile/constants.dart';
 import 'package:holo_fleet_mobile/custom/rectangle.dart';
 import 'package:holo_fleet_mobile/custom/ship.dart';
 import 'package:holo_fleet_mobile/custom/title_tile.dart';
+import 'package:holo_fleet_mobile/responsive.dart';
 import 'package:holo_fleet_mobile/responsive/jumk_data.dart';
 
 class Tablet extends StatelessWidget {
@@ -10,14 +11,30 @@ class Tablet extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var _width = MediaQuery.of(context).size.width / 2.2;
+    var _width = MediaQuery.of(context).size.width / 2.5;
     return Padding(
         padding: const EdgeInsets.fromLTRB(8, 20, 8, 8),
-        child: ListView(
-          shrinkWrap: true,
-          children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
+        child: Scrollbar(
+            isAlwaysShown: Responsive.isTable(context),
+            child: GridView.custom(
+                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: 2),
+                childrenDelegate: SliverChildListDelegate.fixed([
+                  TitleTile(
+                      title: "Assets",
+                      action: Ship(
+                        text: "View All Vehicles",
+                        onPressed: () => {},
+                      )),
+                  fixedSpace,
+                  Rectangle(
+                    children: assets.map((e) => e).toList(),
+                  ),
+                ]))));
+  }
+}
+/* Row(
+              mainAxisAlignment: MainAxisAlignment.end,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Column(
@@ -41,7 +58,7 @@ class Tablet extends StatelessWidget {
                     ),
                   ],
                 ),
-                const SizedBox(width: 35),
+                const SizedBox(width: 25),
                 Column(
                   children: [
                     SizedBox(
@@ -74,8 +91,8 @@ class Tablet extends StatelessWidget {
             ),
             const SizedBox(height: 45),
             Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.end,
+              crossAxisAlignment: CrossAxisAlignment.end,
               children: [
                 Column(
                   children: [
@@ -95,7 +112,7 @@ class Tablet extends StatelessWidget {
                     ),
                   ],
                 ),
-                const SizedBox(width: 35),
+                const SizedBox(width: 25),
                 Column(
                   children: [
                     SizedBox(
@@ -118,8 +135,8 @@ class Tablet extends StatelessWidget {
             ),
             const SizedBox(height: 45),
             Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.end,
+              crossAxisAlignment: CrossAxisAlignment.end,
               children: [
                 Column(
                   children: [
@@ -139,7 +156,7 @@ class Tablet extends StatelessWidget {
                     ),
                   ],
                 ),
-                const SizedBox(width: 35),
+                const SizedBox(width: 25),
                 Column(
                   children: [
                     SizedBox(
@@ -186,7 +203,4 @@ class Tablet extends StatelessWidget {
                 )
               ],
             )
-          ],
-        ));
-  }
-}
+ */
