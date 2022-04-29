@@ -82,7 +82,7 @@ class Mobile extends StatelessWidget {
             children: [
               Column(
                 children: [
-                  Row(
+                  Wrap(
                     children: [
                       Ship(onPressed: () => {}, text: "View All Devices"),
                       const SizedBox(width: 20),
@@ -90,7 +90,7 @@ class Mobile extends StatelessWidget {
                     ],
                   ),
                   fixedSpace,
-                  Row(
+                  Wrap(
                     children: [
                       Ship(onPressed: () => {}, text: "View All Devices"),
                       const SizedBox(width: 20),
