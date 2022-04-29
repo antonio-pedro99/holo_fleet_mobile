@@ -4,6 +4,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:holo_fleet_mobile/constants.dart';
 import 'package:holo_fleet_mobile/custom/rectangle.dart';
 import 'package:holo_fleet_mobile/pages/login.dart';
+import 'package:holo_fleet_mobile/responsive.dart';
 
 class RegisterPage extends StatelessWidget {
   const RegisterPage({Key? key}) : super(key: key);
@@ -11,13 +12,7 @@ class RegisterPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: LayoutBuilder(builder: (context, constraints) {
-        if (constraints.maxWidth < 600) {
-          return registerMobile(context);
-        } else {
-          return registerTablet(context);
-        }
-      }),
+      body: Responsive(mobile: registerMobile(context), tablet: registerTablet(context))
     );
   }
 }

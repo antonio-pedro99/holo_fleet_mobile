@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:holo_fleet_mobile/app.dart';
 import 'package:holo_fleet_mobile/constants.dart';
-import 'package:holo_fleet_mobile/pages/home.dart';
 import 'package:holo_fleet_mobile/pages/register.dart';
+import 'package:holo_fleet_mobile/responsive.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -9,14 +10,8 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: LayoutBuilder(builder: (context, constraints) {
-        if (constraints.maxWidth < 600) {
-          return loginMobile(context);
-        } else {
-          return loginTablet(context);
-        }
-      }),
-    );
+        body: Responsive(
+            mobile: loginMobile(context), tablet: loginTablet(context)));
   }
 }
 
@@ -89,7 +84,7 @@ buildForm(BuildContext context) {
                 onPressed: () {
                   Navigator.of(context).pushAndRemoveUntil(
                       MaterialPageRoute(builder: (context) {
-                    return const MyHomePage();
+                    return const MyApp();
                   }), (route) => false);
                 },
                 child: const Text(
