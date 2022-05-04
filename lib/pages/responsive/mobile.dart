@@ -10,7 +10,6 @@ class MobileLayout extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: body,
-      //bottomNavigationBar: myNaiveNavigationBar(context),
       bottomNavigationBar: MyNaiveNavigationBar(items: [
         NaiveNavigationBarItem(
           title: "Dashboard",

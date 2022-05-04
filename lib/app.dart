@@ -11,12 +11,11 @@ class MyApp extends StatefulWidget {
   State<MyApp> createState() => _MyAppState();
 }
 
-List<Widget> pages = [const MyHomePage()];
-int currentPage = 0;
-
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
+    List<Widget> pages = [MyHomePage(token: widget.token)];
+    int currentPage = 0;
     return Responsive(
         mobile: MobileLayout(body: pages[currentPage]),
         tablet: TabletLayout(

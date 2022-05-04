@@ -1,9 +1,7 @@
 import 'dart:convert';
 import 'dart:io';
-
 import 'package:holo_fleet_mobile/models/user_login.dart';
 import 'package:holo_fleet_mobile/services/auth_response.dart';
-import 'package:holo_fleet_mobile/services/constants.dart';
 import 'package:http/http.dart' as http;
 
 class Auth {
@@ -20,10 +18,8 @@ class Auth {
 
     if (res.statusCode == 200) {
       _response.data = json.decode(res.body);
-      //return json.decode(res.body);
     } else if (res.statusCode == 400) {
       _response.error = json.decode(res.body);
-      //return json.decode(res.body);
     }
     return _response;
   }
