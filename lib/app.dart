@@ -65,6 +65,7 @@ Widget myNaiveSideBar(BuildContext context) {
   return Container(
     width: 250,
     child: ListView(
+      physics: const NeverScrollableScrollPhysics(),
       children: [
         Padding(
           child:

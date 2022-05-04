@@ -63,6 +63,12 @@ flutter:
   assets:
     - assets/bg.png
     - assets/logo.png
+    - assets/icons/battery50.png
+    - assets/icons/batteryfull.png
+    - assets/icons//devices.png
+    - assets/icons/geo.png
+    - assets/key.png
+
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 
