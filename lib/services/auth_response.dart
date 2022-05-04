@@ -5,6 +5,6 @@ class AuthResponse {
   bool get hasData => data != null;
   bool get hasError => error != null;
 
-  Object? get getData => data;
-  Object? get getError => error;
+  Map<String, dynamic>? get getData => data as Map<String, dynamic>;
+  Map<String, dynamic>? get getError => error as Map<String, dynamic>;
 }
