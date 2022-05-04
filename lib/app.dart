@@ -5,8 +5,8 @@ import 'package:holo_fleet_mobile/pages/responsive/tablet.dart';
 import 'package:holo_fleet_mobile/responsive.dart';
 
 class MyApp extends StatefulWidget {
-  const MyApp({Key? key}) : super(key: key);
-
+  const MyApp({Key? key, required this.token}) : super(key: key);
+  final String token;
   @override
   State<MyApp> createState() => _MyAppState();
 }
