@@ -3,12 +3,10 @@ import 'dart:io';
 import 'package:holo_fleet_mobile/models/resource.dart';
 import 'package:http/http.dart' as http;
 
-import 'package:holo_fleet_mobile/services/auth_response.dart';
-
 class ResourcesAPI {
   static Future<List<Resource>> getResourceList(String token) async {
     List<Resource> _resources = [];
-    var res = await http.post(
+    var res = await http.get(
       Uri.parse("https://reqres.in/api/unknown"),
       headers: {
         HttpHeaders.acceptHeader: 'application/json',
@@ -23,6 +21,8 @@ class ResourcesAPI {
       for (var resource in jsonList["data"]) {
         _resources.add(Resource.fromJson(resource));
       }
+    } else {
+      print(res.body);
     }
     return _resources;
   }

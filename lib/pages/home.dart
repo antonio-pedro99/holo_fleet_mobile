@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:holo_fleet_mobile/models/resource.dart';
-import 'package:holo_fleet_mobile/services/auth_response.dart';
 import 'package:holo_fleet_mobile/services/resources_api.dart';
 
 class MyHomePage extends StatefulWidget {
