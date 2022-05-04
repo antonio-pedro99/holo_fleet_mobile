@@ -33,17 +33,3 @@ MaterialColor getItsMaterialColor(Color color) {
   }
   return MaterialColor(color.value, mySwatch);
 }
-
-List<String> svgs_files = [
-  "icons/battery-20.svg",
-  "icons/battery-full.svg",
-  "icons/battery-50.svg",
-  "icons/metro-key.svg",
-  "icons/poly.svg",
-  "icons/rectangle.svg",
-  "icons/wrech-1.svg",
-  "icons/wrech-2.svg"
-      "icons/wrech-3.svg",
-  "icons/wrench.svg",
-  "assets/icons/so-eye.svg",
-];
