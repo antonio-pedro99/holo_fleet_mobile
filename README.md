@@ -11,7 +11,7 @@ A new Flutter project.
 
 ## My approach
 # Mobile
-![image](https://user-images.githubusercontent.com/42675180/166661235-4ba8cf9f-5217-432b-991d-d6728f6f328f.png)
+<img src="https://user-images.githubusercontent.com/42675180/166661235-4ba8cf9f-5217-432b-991d-d6728f6f328f.png" width="200">
 
 # Tablet
 ![image](https://user-images.githubusercontent.com/42675180/166661324-2a9b0b1a-2efa-4990-97b4-8ec7980d5e77.png)
