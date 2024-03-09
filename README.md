@@ -1,6 +1,6 @@
 # holo_fleet_mobile
 
-A new Flutter project.
+A simple responsive app that was proposed as a challenge by a recruiter.
 
 ### Screenshot
 
@@ -10,6 +10,7 @@ A new Flutter project.
 
 
 ## My approach
+
 # Mobile
 <img src="https://user-images.githubusercontent.com/42675180/166661235-4ba8cf9f-5217-432b-991d-d6728f6f328f.png" width="350">
 
